@@ -15,5 +15,8 @@
         <p><a href="canciones/detalle/${cancion.id}">Detalle</a></p>
         <hr>
     </c:forEach>
+    <form action="/canciones/formulario/agregar" method="get">
+        <button type="submit">Agregar Nueva Canción</button>
+    </form>
 </body>
 </html>

@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.joaomoris.canciones.modelos.Cancion;
 import com.joaomoris.canciones.repositorios.RepositorioCanciones;
 
+
+
 @Service
 public class ServicioCanciones {
     @Autowired
@@ -26,5 +28,13 @@ public class ServicioCanciones {
         return cancion.orElse(null);
 
     }
+
+    public Cancion crearCancion(Cancion cancion) {
+        return repositorioCanciones.save(cancion);
+    }
+    
+        public Cancion agregar(Cancion cancion) {
+        return repositorioCanciones.save(cancion);
+        }
 
 }
